@@ -47,6 +47,7 @@ def polynomeLagrange(x, coordonnee):
         result += Lk(x, k, coordonnee) * coordonnee[k][1]
     return result
 
+
 f = polynomeLagrange(x, coordonnee)
 
 def tracer(f, start, end):
@@ -59,5 +60,5 @@ def tracer(f, start, end):
     plt.grid()
     plt.show()
 
-
+print(f)
 tracer(f, -10, 10)
