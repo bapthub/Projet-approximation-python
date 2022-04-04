@@ -103,7 +103,7 @@ def nb_div_simpson(a,b,c,e):
 
 def main():
     #exercice 9
-    print("Exo 9")
+    # print("Exo 9")
     l = nuage_point(0,math.pi/2,4,lambda x: math.sin(x))
     print(l)
     approx_rect_inf = integration_rectange_inf(0, math.pi / 2, 4,l)
@@ -115,8 +115,8 @@ def main():
     approx_simpson = integration_simpson(0, math.pi / 2, 4,l)
     print("approx_simpson I = ",approx_simpson)
 
-    #exercie 10
-    print("\nExo 10")
+    # #exercie 10
+    # print("\nExo 10")
     l = [(0,30),(10,31.63),(20,33.44),(30,35.47),(40,37.75),(50,40.33),(60,43.29),(70,46.70),(80,50.67)]
     print(l)
     approx_rect_inf = integration_rectange_inf(0, 80, 8,l)
@@ -150,7 +150,7 @@ def main():
     max_val = max(abs(max_val),abs(min_val))
     print("val max sur I:",max_val)
     #final
-    print("n=:",nb_div_trapeze(a,b,max_val,10**-7))
+    print("n =",nb_div_rectangle(a,b,max_val,10**-7))
 
     #trapeze
     print("\nTrapeze :")
@@ -173,7 +173,7 @@ def main():
     max_val = max(abs(max_val),abs(min_val))
     print("val max sur I:",max_val)
     #final
-    print("n=:",nb_div_trapeze(a,b,max_val,10**-7))
+    print("n =",nb_div_trapeze(a,b,max_val,10**-7))
 
     #simpson
     print("\nSimpson :")
